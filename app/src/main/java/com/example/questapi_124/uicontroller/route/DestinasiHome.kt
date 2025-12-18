@@ -1,4 +1,8 @@
 package com.example.questapi_124.uicontroller.route
 
-object DestinasiHome {
+import com.example.questapi_124.R
+
+object DestinasiHome : DestinasiNavigasi {
+    override val route = "home"
+    override val titleRes = R.string.nama
 }
