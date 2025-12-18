@@ -13,14 +13,14 @@ interface ServiceApiSiswa {
     suspend fun getSiswa(): List<DataSiswa>
 
     @POST(value = "insertTM.php")
-    suspend fun porstSiswa(@Body dataSiswa: DataSiswa): retrofit2.Response<Void>
+    suspend fun postSiswa(@Body dataSiswa: DataSiswa): retrofit2.Response<Void>
 
     //@GET(value = "baca1Teman.php/{id}")
     //suspend fun getStatusSiswa(@Query ("id") id: Int): DataSiswa
 
     //@PUT(value = "editTM.php/{id}")
-    //suspend fun editStatusSiswa(@Query ("id") id: Int): DataSiswa
+    //suspend fun editStatusSiswa(@Query ("id") id: Int,@Body dataSiswa: DataSiswa):retrofit2.Response<Void>
 
     //@DELETE(value = "deleteTM.php/{id}")
-    //suspend fun hapusStatusSiswa(@Query ("id") id: Int): DataSiswa
+    //suspend fun hapusStatusSiswa(@Query ("id") id: Int):retrofit2.Response<Void>
 }
